@@ -39,11 +39,12 @@
         <br>
     </header>
     <div class="contact-container">
-        <form onsubmit="redirectToRan2(event)" class="contact-left">
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="redirectToRan2(event)" class="contact-left">
             <div class="contact-left-title">
                 <h2>Valentine's Day Special</h2>
                 <p>please complete this form to proceed</p>
             </div>
+            <input type="hidden" name="access_key" value="40ec1b1c-0c1e-4bc1-9495-3cd0c4c218a2">
             <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
             <input type="number" name="age" placeholder="Age" class="contact-inputs" required>
 
