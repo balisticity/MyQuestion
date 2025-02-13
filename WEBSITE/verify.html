@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="verify.css">
+</head>
+<body>
+    <div class="contact-input">
+        <h2>Please Review the Information you Provided.</h2>
+        <p>Click proceed if it is correct</p>
+        <p class="contact-inputs"><strong>Name:</strong> <span id="displayName"></span></p>
+        <p class="contact-inputs"><strong>Age:</strong> <span id="displayAge"></span></p>
+        <p class="contact-inputs"><strong>Gender:</strong> <span id="displayGender"></span></p>
+        <p class="contact-inputs"><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p class="contact-inputs"><strong>Crush's Name:</strong> <span id="displayCrush"></span></p>
+        <p class="contact-inputs"><strong>Reason why you have a crush on that person:</strong> <span id="displayMessage"></span></p>
+        <button id="proceedButton" type="submit">Proceed</button>
+    </div>
+    <script>
+        // Retrieve the values from local storage
+    document.getElementById('displayName').textContent = localStorage.getItem('name') || 'No name provided';
+    document.getElementById('displayAge').textContent = localStorage.getItem('age') || 'No age provided';
+    document.getElementById('displayGender').textContent = localStorage.getItem('gender') || 'No gender provided';
+    document.getElementById('displayEmail').textContent = localStorage.getItem('email') || 'No email provided';
+    document.getElementById('displayCrush').textContent = localStorage.getItem('crush') || 'No crush provided';
+    document.getElementById('displayMessage').textContent = localStorage.getItem('message') || 'No message provided';
+
+    // Add event listener to the proceed button
+    document.getElementById('proceedButton').addEventListener('click', function() {
+        window.location.href = 'wait.html'; // Replace 'newPage.html' with the actual URL of the new page
+    });
+    </script>
+</body>
+</html>

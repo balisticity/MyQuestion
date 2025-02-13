@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the heading */
+    gap: 20px;
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 20px; /* Rounded corners */
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    text-align: center; /* Center text for the heading */
+    height: 100%;
+}
+h2 {
+    font-weight: 560;
+    color: #fd3994;
+    font-size: 34px;
+    margin-bottom: 5px;
+    font-family: "Kanit", serif;
+    font-style: normal;
+    text-align: center;
+}
+p{
+    color: hsl(332, 81%, 33%);
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: "Kanit", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
+.contact-input h2 {
+    margin: 0; /* Remove default margin */
+    color: #fd3994; /* White text color for visibility */
+    background-color: rgba(255, 105, 180, 0.1); /* Slightly darker background for the heading */
+    padding: 10px; /* Padding for the heading */
+    border-radius: 10px; /* Rounded corners for the heading */
+    width: 100%; /* Full width for the heading */
+    height: 100%;
+
+}
+.contact-input p {
+    align-self: flex-start; /* Align paragraphs to the start */
+    width: 100%; /* Full width for paragraphs */
+    padding: 10px; /* Padding for better spacing */
+    background-color: rgba(255, 105, 180, 0.1); /* Light pink background for paragraphs */
+    border-radius: 10px; /* Rounded corners for paragraphs */
+    text-align: left; /* Left-align text in paragraphs */
+}
+.contact-inputs {
+    font-size: 18px; /* Font size for the input labels */
+}
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background: green;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}

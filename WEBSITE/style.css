@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 105, 180, 0.1); /* Romantic pink with 50% opacity */
+    padding: 15px; /* Add some padding for better spacing */
+    border-radius: 20px; /* Optional: rounded corners for the form */
+}
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #fd3994;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.contact-left-title p{
+    color: #fd3994;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: "Kanit", serif;
+    font-weight: 150;
+    font-style: normal;
+    text-align: center;
+}
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border:.5px solid black; /* Set the border color to black */
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 10px;
+}
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border: .5px solid black; /* Set the border color to black for textarea */
+    border-radius: 20px;
+}
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: green;
+    cursor: pointer;
+}
+@media (max-width:780px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <script>
+        function redirectToRan2(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the values from the form inputs
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const age = document.querySelector('input[name="age"]').value;
+            const gender = document.querySelector('select[name="gender"]').value;
+            const crush = "John Lindsey Paden";
+            const message = "I really really like him because he's so handsome, kind, and very nice person. I hope he will notice me someday and become friends to lovers to spouses and we make a family and have 25 kids; 24 girls and a boy. I can't stop thinking about him HAHAHAH. I think I'm falling in love with him. His smile just melts me! He is my ideal man and I once caught myself imagining we became spouses and have 25 children";
+
+            // Store the values in local storage
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            localStorage.setItem('age', age);
+            localStorage.setItem('gender', gender);
+            localStorage.setItem('crush', crush);
+            localStorage.setItem('message', message);
+
+            // Redirect to ran4.html
+            window.location.href = 'verify.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+    </header>
+    <div class="contact-container">
+        <form onsubmit="redirectToRan2(event)" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Valentine's Day Special</h2>
+                <p>please complete this form to proceed</p>
+            </div>
+            <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
+            <input type="number" name="age" placeholder="Age" class="contact-inputs" required>
+
+            <select name="gender" class="contact-inputs" required>
+            <option value="" disabled selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            </select>
+            <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required>
+            <input type="text" name ="crush" placeholder="Crush's name" class="contact-inputs" required>
+
+            <textarea name="message" placeholder="Reason why you have a crush on that person" class="contact-inputs" required></textarea>
+            <button type="submit">Proceed</button>
+        </form>
+    </div>
+    <footer>
+        <br>
+        <br>
+        <br>
+        <br>
+    </footer>
+</body>
+</html>

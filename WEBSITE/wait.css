@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.container .tenor-gif-embed {
+    max-width: 200px;
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.btn a {
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsla(0, 0%, 0%, 0.1);
+    color: black;
+}
+.container .yes-button{
+    background-color: green;
+}
+.container .no-button{
+    background-color: red;
+}
+h1{
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fd3994;
+}
+p{
+    font-family: "Kanit", serif;
+    font-weight: 150;
+    font-style: normal;
+    font-size: 16px;
+    color: hsl(332, 81%, 33%);
+
+}
+
+
